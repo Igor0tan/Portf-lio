@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor0tan</title>
+  <meta name="description" content="Portfolio cyber de Igor Henrique de Oliveira — cibersegurança, pentest e desenvolvimento." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎯%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+  <canvas id="matrix"></canvas>
+  <div class="glow-bg"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top">&lt;<b>Igor0tan</b>/&gt;</a>
+    <nav class="links">
+      <a href="#sobre">sobre</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="status-chip">
+        <span class="dot"></span>
+        <span id="status-text">system online</span>
+      </div>
+      <div class="hero-name">
+        <h1 class="glitch" data-text="IGOR0TAN">IGOR0TAN</h1>
+        <h2 id="typewriter"></h2>
+      </div>
+      <p class="hero-tag">
+        Cybersegurança · Pentest · Análise de Vulnerabilidades · Segurança da Informação
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn ghost" href="https://github.com/Igor0tan" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="boot reveal" id="boot">
+        <div class="boot-lines">
+          <p><span class="acc">igor0tan@localhost</span>:<span class="acc">~</span>$ <span class="ok">whoami</span></p>
+          <p class="ok">&gt; security_researcher · offensive_and_defensive</p>
+          <p><span class="acc">igor0tan@localhost</span>:<span class="acc">~</span>$ <span class="ok">cat ./skills.txt</span></p>
+          <p class="ok">&gt; pentest · vuln-analysis · osint · web-security</p>
+          <p><span class="warn">$ status: actively_hacking</span></p>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span></span>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <h3 class="section-title"><span class="tick">01</span> Sobre</h3>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="hud-avatar">
+            <img src="https://avatars.githubusercontent.com/u/122578685?v=4" alt="Avatar de Igor Henrique de Oliveira" />
+            <div class="hud-ring"></div>
+          </div>
+          <div class="term">
+            <div class="term-bar">
+              <span class="t red"></span><span class="t yellow"></span><span class="t green"></span>
+              <span class="term-title">igoro0tan@portifolio:~$</span>
+            </div>
+            <div class="term-body">
+              <p>igor@localhost:~$ <span class="caret"></span></p>
+              <p class="muted"># Estudante de programação em evolução constante. Hoje me</p>
+              <p class="muted"># aprofundo em Cibersegurança, Pentest, análise de</p>
+              <p class="muted"># vulnerabilidades e segurança da informação.</p>
+              <p class="ok">&gt; engage_cloud_stack_enabled: true</p>
+              <p class="ok">&gt; hometown: "Curitiba — PR, Brasil"</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Sou <strong>Igor Henrique de Oliveira</strong>, programador focado em
+            <strong>segurança ofensiva e defensiva</strong>. Tenho evoluído constantemente no
+            mundo do código e mergulho cada vez mais fundo em encontrar e corrigir
+            vulnerabilidades, explorar técnicas de pentest e proteger sistemas.
+          </p>
+          <p>
+            Gosto de transformar problemas complexos em soluções elegantes — dentro e fora do
+            terminal.
+          </p>
+          <a class="glitch-link" href="https://github.com/Igor0tan" target="_blank" rel="noopener">igor0tan@github</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <h3 class="section-title"><span class="tick">02</span> Habilidades</h3>
+      <div class="skills">
+        <div class="skill reveal" data-label="pentest">
+          <div class="skill-top">
+            <span class="skill-icon">🛡</span>
+            <span class="skill-name">Pentest</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+        <div class="skill reveal" data-label="vuln">
+          <div class="skill-top">
+            <span class="skill-icon">🔓</span>
+            <span class="skill-name">Análise de Vulns</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+        <div class="skill reveal" data-label="web">
+          <div class="skill-top">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">Dev Web</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+        <div class="skill reveal" data-label="python">
+          <div class="skill-top">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+        <div class="skill reveal" data-label="html">
+          <div class="skill-top">
+            <span class="skill-icon">🧱</span>
+            <span class="skill-name">HTML &amp; CSS</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+        <div class="skill reveal" data-label="osint">
+          <div class="skill-top">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-name">OSINT</span>
+            <span class="skill-pct"></span>
+          </div>
+          <div class="bar"><div class="fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <h3 class="section-title"><span class="tick">03</span> Projetos</h3>
+      <div class="filters">
+        <button class="filter active" data-filter="all">todos</button>
+        <button class="filter" data-filter="security">segurança</button>
+        <button class="filter" data-filter="web">web</button>
+      </div>
+      <div id="projects" class="projects"></div>
+    </section>
+
+    <section id="contato" class="section">
+      <h3 class="section-title"><span class="tick">04</span> Contato</h3>
+      <div class="contact-box reveal">
+        <p class="contact-ping">PING igor0tan@github ... OK</p>
+        <p>
+          Curioso sobre segurança ou quer bater um papo sobre vulnerabilidades?
+          Conecte-se comigo no GitHub.
+        </p>
+        <a class="btn primary big" href="https://github.com/Igor0tan" target="_blank" rel="noopener">Visitar perfil ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>igor0tan © 2026</span>
+    <span class="footer-matrix" id="footerMatrix">01001110 01101111 01110100 01110000</span>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
